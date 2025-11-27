@@ -1,43 +1,100 @@
-# Bank-Customer-Segmentation-Analysis-Report
-This project presents a comprehensive Bank Customer Segmentation Analysis developed in Power BI. The primary objective of this project is to analyze customer demographics, transaction behavior, and risk levels to uncover actionable insights that can help businesses understand their customers better and make data-driven decisions.
-### This project focuses on Customer Segmentation Analysis using Power BI to explore customer demographics, transaction behavior, and risk profiles.
+# 🧮 Bank Customer Segment & Risk Analysis – Power BI
 
-🔹 Key Insights:
+This project is an end-to-end **Power BI dashboard** for analyzing **bank customer behavior, segmentation, and risk**.  
+It transforms raw customer and transaction data into actionable insights for **marketing, risk management, and strategic decision-making**.
 
-Customer Demographics:
+---
 
-Total customers: 836K
+## 📊 Project Overview
 
-Average age: 40.47 years
+- **Total Customers:** 836K  
+- **Total Transactions:** 981K  
+- **Total Revenue:** ₹1.41 Billion  
+- **Average Transaction Amount:** ₹1.44K  
+- **Maximum Transaction Amount:** ₹1.56M  
+- **Average Customer Age:** 40.47 years  
 
-Gender distribution: 75.48% Male, 24.52% Female
+The dashboard helps stakeholders understand **who their customers are, how they transact, which segments are most valuable, and where the risks lie.**
 
-Top customer locations: Mumbai, New Delhi, Bangalore, Gurgaon
+---
 
-Transactions & Revenue:
+## 🔍 Key Insights
 
-Total transactions: 981K
+### 👥 Customer Demographics
+- Gender distribution:
+  - **Male:** 75.48%
+  - **Female:** 24.52%
+- Strong presence in major cities:
+  - **Top locations:** Mumbai, New Delhi, Bangalore, Gurgaon
+- Age distribution:
+  - Average age of customers is **40.47 years**
+  - Visual breakdown across age groups with gender splits
 
-Total revenue: ₹1.41 Billion
+### 💳 Transactions & Revenue
+- **Total transactions:** 981K  
+- **Total revenue:** ₹1.41 Billion  
+- **Average transaction:** ₹1.44K  
+- **Maximum transaction:** ₹1.56M  
+- Trend analysis of:
+  - Daily transaction activity
+  - Peak transaction times
+  - Customer spending behavior over time
 
-Average transaction amount: ₹1.44K
+### 🧩 RFM-Based Customer Segmentation
+Used **RFM (Recency, Frequency, Monetary)** model to segment customers into:
+- **Champions**
+- **Loyal Customers**
+- **At Risk**
+- **Lost**
+- **New Customers**
+- **Others**
 
-Maximum transaction amount: ₹1.56M
+Key findings:
+- **Champions** generated the highest revenue: **₹561.76M**
+- Segment-wise comparison of:
+  - Average revenue per customer  
+  - Transaction frequency  
+  - Age group distribution within each segment  
 
-Segmentation (RFM Analysis):
+### ⚠️ Risk & Credit Behavior
+- Customers classified into **High, Medium, and Low Risk** based on:
+  - **Credit score**
+  - **Account balance**
+  - **Transaction history**
+- Visualizations show:
+  - Credit score distribution across segments  
+  - Relationship between **risk level and account balance**  
+  - Identification of **top high-revenue but high-risk customers** for closer monitoring
 
-Key segments: Champions, Loyal Customers, At Risk, Lost, New Customers, Others
+---
 
-Champions generated the highest revenue (₹561.76M).
+## 🛠️ Features
 
-Identified High, Medium, and Low Risk customers based on credit score and account balance.
+- **Interactive Power BI dashboard** with slicers for:
+  - Age group, gender, location, customer segment, risk level, date range, and transaction range
+- **Drilldown & drillthrough analysis**:
+  - From overall KPIs → segment-level → individual customer details
+- **RFM-based segmentation**:
+  - Automatically classifies customers into meaningful behavioral groups
+- **Risk analysis module**:
+  - Combines credit score, balance, and transaction metrics for risk profiling
+- Visualizations for:
+  - Age group distribution
+  - Gender distribution
+  - Geographic distribution
+  - Transaction trends & revenue patterns
+  - Segment-wise and risk-wise comparisons
 
-🔹 Features:
+---
 
-Interactive Power BI dashboard with drilldown and drillthrough analysis.
+## 🧱 Tech Stack
 
-Customer segmentation using RFM (Recency, Frequency, Monetary) model.
-
-Risk analysis based on credit score, account balance, and transaction history.
-
-Visualizations for age group, gender, geography, and transaction behavior.
+- **Power BI Desktop**
+- **DAX** (Data Analysis Expressions) for:
+  - RFM scoring
+  - KPI calculations (revenue, frequency, averages, etc.)
+  - Risk scoring logic
+- **Data Sources**:
+  - Customer master data (demographics, credit score, balances)
+  - Transaction data (amounts, dates, times)
+  - Segmentation & risk mapping tables (if applicable)
